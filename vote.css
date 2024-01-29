@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+
+#page1{
+    width: 100%;
+    min-height: 100%;
+    background-color: rgba(0, 255, 255, 0.199);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+#page1 a{
+    background-color: blueviolet;
+    padding: 10px 50px;
+    text-decoration: none;
+    color: aliceblue;
+}

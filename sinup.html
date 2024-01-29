@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="login-container">
+            <img src="./img/20231104_173408.png" alt="Minecraft Logo" class="minecraft-logo">
+            <h2>Login to Your Account</h2>
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="username">Gmail:</label>
+                    <input type="text" id="gmail" name="gmail" placeholder="Gmail" required>
+                </div>
+                <div class="input-group">
+                    <label for="username">fullName:</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="fullName" required>
+                </div>
+                <div class="input-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" placeholder="Username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="password" required>
+                </div>
+               <div class="but">
+               
+                <div class="dd"><button type="submit" onclick="login()">
+                    <img src="./img/add-friend.png" width="20" alt=""><a href="./index.html">Sign up</a>
+                </button></div>
+                or
+                <button  type="button">
+                    <a href="./login.html">Login</a>
+                </button>
+               </div>
+                <div>
+
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function login() {
+    // Add your login logic here
+    // For now, just prevent the form from submitting
+    alert("Login button clicked. Add your login logic!");
+
+}
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,529 @@
+@font-face {
+    font-family: forsot;
+    src: url(/img/Bebas_Neue/BebasNeue-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #fff;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+
+#page1{
+    width: 99.99%;
+    min-height: 100vh;
+    background: url(./img/1321420-752fe8602eabad48e4b679cc51ade45a7ebde470.png) fixed no-repeat;
+    background-size: cover;
+    /* overflow-y: hidden; */
+    z-index: 10;
+    overflow-x: auto;
+}
+#nav{
+    top: 0;
+    width: 99.88%;
+    height: 9vh;
+    background-color: rgba(221, 221, 221, 0.26);
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    z-index: 999;
+    backdrop-filter: blur(10px);
+    overflow-y: hidden;
+}
+#nav-l{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    color:  white;
+}
+#nav-l h1{
+    font-weight: 200;
+}
+#nav-l h1 span{
+    font-weight: 900;
+}
+#nav-r {
+    /* color: aliceblue; */
+    display: flex;
+    /* background-color: aqua; */
+    gap: 15px;
+    width: 30%;
+    align-items: center;
+    justify-content: space-around;
+    /* animation: nav 2s infinite both; */
+}
+
+
+#nav-r > a{
+    text-decoration: none;
+    color: white;
+    /* animation: nav 3s infinite both; */
+    /* animation-delay: 10s; */
+    font-weight: 500;
+    font-size: large;
+    /* gap: 10px; */
+}
+
+#nav-r > a:hover{
+    transform: scale(1.2);
+}
+
+#nav-r a:last-child{
+    /* animation-fill-mode: none; */
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    /* background-color: rgba(0, 217, 255, 0.308); */
+    animation: nav2 4s infinite both;
+    padding: 10px 20px;
+    border-radius: 5vw;
+}
+
+@keyframes nav2 {
+    0%{
+        background-color: #db000042;
+    }
+    50%{
+        background: hwb(167 10% 0%);
+    }
+    100%{
+       background-color: rgba(62, 9, 185, 0.226);
+    }
+}
+#contaner{
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
+    background: #2c2b2b41;
+    width: 100%;
+    min-height: 100vh;
+    font-family: forsot;
+
+    text-transform: uppercase;
+    /* gap: 50px; */
+    /* backdrop-filter: blur(4px); */
+  
+    
+}
+.logo{
+    /* position: fixed; */
+    /* z-index: 3; */
+    min-width: 350px;
+    min-height: 350px;
+    /* background-color: aqua; */
+    overflow-y: hidden;
+    /* transform: scale(1); */
+    animation: logo infinite 5s both;
+}
+@keyframes logo {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.8);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+#but{
+    /* font-family: forsot; */
+    /* background: #0265c2; */
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    display: flex;
+    gap: 20px;
+}
+#but a{
+    text-decoration: none;
+    color: rgb(1, 253, 241);
+    font-size: 28px;
+    
+    /* font-weight: 400; */
+    /* background-color: azure; */
+}
+#but h5{
+    text-align: end;
+    color: #fff;
+}
+#but .but{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:2px solid rgb(0, 255, 234);
+    background-color: rgba(240, 248, 255, 0.171);
+    padding: 10px 30px;
+    border-radius: 2vh;
+    /* gap: 50px; */
+    transition: all .7s;
+    gap: 20px;
+    backdrop-filter: blur(2px);
+}
+#but .but:nth-child(1) h5{
+    /* background-color: #00d0f5; */
+    text-align: start;
+}
+#but .but:hover{
+    box-shadow:  0 0 20px 2px #00d0f5;
+}
+#but .but i{
+ color: aqua;
+ font-size: 58px;
+ 
+} 
+
+/* page 2 */
+
+#page2{
+    /* position: relative; */
+    width: 100%;
+    /* z-index: 20; */
+    overflow: hidden;
+    height: 100%;
+    /* padding: 10vh 2vw; */
+    background: url(./img/Minecraft-viewpoint-2250268-wallhere.com.jpg)  no-repeat center;
+    background-size: cover;
+    
+}
+.hfhf{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10vh 2vw;
+    transition: all .1s;
+    /* position: absolute; */
+    background: #0000008f;
+    width: 100%;
+    min-height: 100vh;
+    
+}
+#page2 > h1{
+    text-align: center;
+    margin-bottom: 60px;
+}
+#shop{
+    /* overflow-y: scroll; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    /* height: 90vh; */
+    /* background-color: #db000021; */
+    gap: 10px;
+    margin-top: 20px;
+   
+}
+.cards .buy button{
+    text-decoration: none;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* text-align: center; */
+    color: #81e8fa;
+    /* width: 100%; */
+    background-color: #0000008f;
+    padding: 10px 40px;
+    border-radius: 20px;
+}
+
+.cards{
+    /* text-align: center/; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 24%;
+    height: 60vh;
+    /* background-color: #db006627; */
+    border: #fff 1px solid; 
+    transition: all 1s;
+}
+.cards:hover{
+    transform: scale(0.9);
+    box-shadow: 0 0 20px 2px #ffffff;
+}
+.card-text{
+    background-color: #27272781;
+    width: 100%;
+    height: 35%;
+}
+.card-img {
+    position: relative;
+    height: 65%;
+    width: 100%;
+    /* background-color: chocolate; */
+    border: #00d0f52f 7px solid;
+    
+}
+.cards p,h1{
+    text-align: center;
+    text-align: center;
+    text-wrap: wrap;
+}
+.card-img:hover{
+    box-shadow: 0 0 20px 1px #00d0f596;
+}
+.card-img img{
+    position: absolute;
+    background-size: cover;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    /* background-position: center; */
+}
+
+#page3{
+    background: url(./img/atoz-botva.jpg)  no-repeat center;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+#page3 iframe{
+    margin-top: 80px;
+    position: absolute;
+    width: 95vw;
+}
+footer{
+    width: 100%;
+    height: 80px;
+    background-color: #00d0f5;
+    display: flex;
+    color: #fff;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    gap: 20px;
+}
+.footer-l{
+    display: flex;
+    align-items: center;
+    justify-content:  space-evenly;
+    /* background: #00171b; */
+    width: 25%;
+    height: 100%;
+}
+.footer-l h3{
+    text-align: center;
+    color: #fff;
+}
+.footer-m{  
+    width: 35%;
+    height: 100%;
+    /* background: #00171b; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.footer-m h5,p{
+    /* color: #00d0f5; */
+    text-wrap: wrap;
+}
+.footer-r{
+    width: 25%;
+    height: 100%;
+    /* background-color: #00171b; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.footer-r a{
+    text-decoration: none;
+    font-size: 30px;
+}
+.footer-r a:nth-child(1){
+    color: #0d3da5;
+}
+.footer-r a:nth-child(2){
+    color: red;
+}
+.footer-r a:nth-child(3){
+    color: #08f7ff;
+}
+
+@media screen and (max-width: 1000px) {
+    .cards:hover{
+        /* margin-top: -30px; */
+        box-shadow: 0 0 20px 2px #ffffff;
+    }
+    .cards{
+        width: 45%;
+        height: 60vh;
+    }
+   
+    #but{
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 30px;
+    }
+    .but {
+        font-size: 5vh;
+    }
+    .logo{
+        margin-top: 60px;
+    }
+}
+@media screen and (max-width: 600px) {
+   
+    #but a{
+        text-decoration: none;
+        color: rgb(1, 253, 241);
+        font-size: 18px;
+        
+        /* font-weight: 400; */
+        /* background-color: azure; */
+    }
+    #but h5{
+        font-size: 18px;
+        text-align: end;
+        color: #fff;
+    }
+    #but .but{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border:2px solid rgb(0, 255, 234);
+        background-color: rgba(240, 248, 255, 0.171);
+        padding: 10px 10px;
+        border-radius: 2vh;
+        
+        transition: all .7s;
+        gap: 10px;
+        backdrop-filter: blur(2px);
+    }
+    #but .but:nth-child(1) h5{
+        /* background-color: #00d0f5; */
+        text-align: start;
+    }
+    #but .but:hover{
+        box-shadow:  0 0 20px 2px #00d0f5;
+    }
+    #but .but i{
+     color: aqua;
+     font-size: 30px;
+    } 
+    
+    .cards:hover{
+        /* margin-top: -30px; */
+        box-shadow: 0 0 20px 2px #ffffff;
+    }
+    .cards{
+        width: 100%;
+    }
+   
+    #but{
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 30px;
+    }
+    .but {
+        font-size: 5vh;
+    }
+    .logo{
+        margin-top: 60px;
+    }
+}
+@media screen and (max-width: 510px) {
+    .cards:hover{
+        /* margin-top: -30px; */
+        box-shadow: 0 0 20px 2px #ffffff;
+    }
+    .cards{
+        width: 100%;
+    }
+    #but{
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 30px;
+    }
+    .but {
+        font-size: 5vh;
+    }
+    .logo{
+        margin-top: 60px;
+    }
+    .footer-l img{
+        width: 70px;
+    }
+    .footer-l h3{
+        font-size: 15px;
+    }
+    .footer-m{
+        /* background-color: #0d3da5; */
+        width: 40%;
+    }
+    footer .footer-m > h5{
+        font-size: 10px;
+    }
+    footer .footer-m > p{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 480px){
+    .footer-l img{
+        display: none;
+    }
+    .footer-l h3{
+        font-size: 10px;
+    }
+    .footer-m{
+        /* background-color: #0d3da5; */
+        width: 30%;
+    }
+    footer .footer-m > h5{
+        font-size: 10px;
+    }
+    footer .footer-m > p{
+        font-size: 10px;
+    }
+}
+ /* Add this at the end of your existing CSS */
+@media screen and (max-width: 768px) {
+
+    #nav {
+      /* flex-direction: column; */
+      align-items: center;
+      height: auto;
+      padding: 10px;
+      height: 60px;
+    }
+    #nav-l{
+        display: none;
+    }
+    #nav-r {
+      width: 100%;
+      /* flex-direction: column; */
+      align-items: center;
+      /* margin-top: 10px; */
+    }
+  
+    
+    #nav-r{
+        display: flex;
+    }
+    .navbar-toggle {
+      display: block;
+      cursor: pointer;
+    }
+    
+  }
+  

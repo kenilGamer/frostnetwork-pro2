@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,20 +15,31 @@
        
     </div>
     <div class="container">
-        <div class="nav">
+        <!-- <div class="nav">
             <div class="logo">
                 <a href="#">FrostNetwork</a>
             </div>
-            <div class="links">
-                <!-- <span id="open">👨‍🚀</span> -->
-               
+            <div class="links">               
                     <a href="#">shop</a>
                     <a href="#">About</a>
                     <a href="#">Cards</a>
-                    <a href="#">Login</a>
-                
+                    <a href="#">Login</a>  
+            </div>
+        </div> -->
+        <div id="nav">
+            <div id="nav-l">
+                <img src="./img/20231104_173408.png" width="70" alt="">
+                <h1>Frost<span>Network</span></h1>
+            </div>
+            <div id="nav-r" class="navbar-menu">
+                 
+                <a href="./shop.html">shop</a>
+                <a href="./vote.html">Vote</a>
+                <a href="./discord.html">discord</a>
+                <div class="login"><a href="./login.html" >LOGIN</a></div>
             </div>
         </div>
+        
         <div class="hero-copy">
             <h1>Frost Network</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -48,5 +60,7 @@
     </div>
     <canvas id="draw"></canvas>
     <script src="./script.js"></script>
+    <script src="./index.js"></script>
+
 </body>
 </html>
