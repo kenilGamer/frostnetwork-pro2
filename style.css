@@ -117,7 +117,15 @@ a{
         display: flex;
        align-items: center;
        justify-content: space-between;
+
        /* flex-wrap: wrap; */
+    }
+    .links1{
+        /* background-color: #fff; */
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .footer{
         width: 100%;
@@ -138,6 +146,18 @@ a{
       font-weight: 800;
     }
     .ff{
-        display: none;
+        font-size: 2vw;
+        /* background-color: aliceblue; */
+    }
+    #play{
+        padding: 10px 20px;
+        border-radius: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: aquamarine;
+    }
+    #play a{
+        font-size: 4.5vw;
     }
 }

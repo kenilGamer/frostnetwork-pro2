@@ -129,7 +129,7 @@ function clickss(button) {
 
   // Find the nearest parent with class "cards" and then select the ".result" element
   let resultElement = button.closest(".cards").querySelector(".result");
-  resultElement.innerText = text;
+  resultElement.innerText = text; 
 }
 
 // clickss()
