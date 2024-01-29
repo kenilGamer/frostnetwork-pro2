@@ -92,7 +92,17 @@ a{
     min-width: 100%;
     min-height: 100%;
 }
-
+#play{
+    padding: 10px 15px;
+    border-radius: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aquamarine;
+}
+#play a{
+    font-size: 1.5vw;
+}
 /* For screens smaller than 768px */
 @media (max-width: 768px) {
     .nav {
