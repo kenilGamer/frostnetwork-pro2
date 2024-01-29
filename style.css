@@ -2,12 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: #fff;
 }
 html , body{
     height: 100%;
     width: 100%;
     overflow: hidden;
-    background-color: red;
+    background-color: #000;
 }
 ::selection{
     color: #fff;
@@ -52,7 +53,7 @@ canvas{
 .links{
     display: flex;
     align-items: center;
-    gap: 2em;
+    gap: 1em;
 }
 a{
     text-decoration: none;
@@ -92,4 +93,41 @@ a{
     min-height: 100%;
 }
 
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+    .nav {
+        /* flex-direction: column; */
+        /* flex-wrap: wrap; */
+        gap: 5px;
+        padding: 10px;
+    }
 
+    .links {
+        width: 100%;
+        display: flex;
+       align-items: center;
+       justify-content: space-between;
+       /* flex-wrap: wrap; */
+    }
+    .footer{
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        align-items: center;
+        padding: 1em;
+        /* background-color: aliceblue; */
+    }
+    .logo {
+      /* display: none; */
+      display: flex;
+      align-items: center;
+      font-size: 2.1vw;
+      font-weight: 800;
+    }
+    .ff{
+        display: none;
+    }
+}

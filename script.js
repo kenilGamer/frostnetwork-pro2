@@ -1,5 +1,4 @@
 const canvas = document.querySelector("canvas");
-
 const ctx = canvas.getContext("2d");
 
 canvas.width = window.innerWidth;
@@ -11,7 +10,9 @@ ctx.fillRect(0, 0, canvas.width, canvas.height);
 ctx.lineJoin = "round";
 ctx.lineCap = "round";
 
-ctx.lineWidth = 200; // Adjust the line width as needed
+// Adjust the line width based on the device type
+ctx.lineWidth = isMobile() ? 80 : 200;
+
 ctx.globalCompositeOperation = "destination-out";
 
 let isDrawing = false;
@@ -61,3 +62,8 @@ canvas.addEventListener("touchend", () => {
 canvas.addEventListener("mouseout", () => {
     isDrawing = false;
 });
+
+// Function to check if the device is a mobile device
+function isMobile() {
+    return /Mobi|Android/i.test(navigator.userAgent);
+}
