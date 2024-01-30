@@ -3,9 +3,9 @@ const ctx = canvas.getContext("2d");
 
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
-
-ctx.fillStyle = "#000000f5";
-ctx.fillRect(0, 0, canvas.width, canvas.height);
+ctx.fillStyle = "rgba(0, 0, 0, 0.98)";
+// ctx.fillStyle = "#000000f5";
+ctx.fillRect(0, 0, canvas.width, canvas.height ,10);
 
 ctx.lineJoin = "round";
 ctx.lineCap = "round";
