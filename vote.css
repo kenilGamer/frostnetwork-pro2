@@ -27,7 +27,7 @@ html , body{
     color: aliceblue;
 }
 canvas{
-    
+    /* background-color: aqua; */
     position: absolute;
     top: 0;
     left: 0;
