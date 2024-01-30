@@ -10,8 +10,17 @@
     color: #fff;
 }
 html , body{
+    position: relative;
+
     height: 100%;
     width: 100%;
+}
+canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
 }
 
 #page1{
@@ -186,11 +195,12 @@ html , body{
 /* page 2 */
 
 #page2{
-    /* position: relative; */
+    top: 0;
+     position: absolute; 
     width: 100%;
     /* z-index: 20; */
     overflow: hidden;
-    height: 100%;
+    min-height: 100%;
     /* padding: 10vh 2vw; */
     background: url(./img/Minecraft-viewpoint-2250268-wallhere.com.jpg)  no-repeat center;
     background-size: cover;
@@ -207,6 +217,7 @@ html , body{
     background: #0000008f;
     width: 100%;
     min-height: 100vh;
+    overflow-x: auto;
     
 }
 #page2 > h1{

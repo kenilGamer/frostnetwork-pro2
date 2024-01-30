@@ -7,6 +7,7 @@
 html , body{
     height: 100%;
     width: 100%;
+    position: relative;
 }
 
 #page1{
@@ -24,4 +25,12 @@ html , body{
     padding: 10px 50px;
     text-decoration: none;
     color: aliceblue;
+}
+canvas{
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
 }
