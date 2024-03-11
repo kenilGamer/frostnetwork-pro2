@@ -75,3 +75,12 @@ window.addEventListener('resize', resizeCanvas);
 
 // Initial canvas size setup
 resizeCanvas();
+
+function clickss(element) {
+    // Your custom logic for handling the click event
+    console.log("Button clicked!");
+
+    // Example: Redirect to a different URL on click
+    window.location.href = "https://minecraftpocket-servers.com/server/126575/vote/";
+}
+

@@ -11,18 +11,15 @@
 }
 html , body{
     position: relative;
-
+    overflow-x: hidden;
     height: 100%;
     width: 100%;
 }
-canvas{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    min-height: 100%;
-}
 
+a{
+    text-decoration: none;
+
+}
 #page1{
     width: 99.99%;
     min-height: 100vh;

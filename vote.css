@@ -9,7 +9,15 @@ html , body{
     width: 100%;
     position: relative;
 }
-
+button{
+    z-index: 20;
+    position: relative;
+    background-color: blueviolet;
+    padding: 10px 50px;
+    text-decoration: none;
+    color: aliceblue;
+    border: none;
+}
 #page1{
     width: 100%;
     min-height: 100%;
@@ -20,11 +28,14 @@ html , body{
     flex-direction: column;
     gap: 20px;
 }
-#page1 a{
-    background-color: blueviolet;
-    padding: 10px 50px;
-    text-decoration: none;
-    color: aliceblue;
+#page1 a button{
+        z-index: 20;
+        position: relative;
+        background-color: blueviolet;
+        padding: 10px 50px;
+        text-decoration: none;
+        color: aliceblue;
+        border: none;
 }
 canvas{
     /* background-color: aqua; */
